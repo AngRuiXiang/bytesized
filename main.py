@@ -34,7 +34,7 @@ TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 GEMINI_API_KEY = os.environ["GEMINI_API_KEY"]
 
 SGT = timezone(timedelta(hours=8))
-GEMINI_MODEL = "gemini-2.0-flash"
+GEMINI_MODEL = "gemini-2.5-flash-lite"
 MAX_SUMMARY_CHARS = 600
 TELEGRAM_MAX_CHARS = 4096
 
