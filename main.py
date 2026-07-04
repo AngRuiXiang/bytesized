@@ -9,6 +9,9 @@ from datetime import datetime, timedelta, timezone
 import feedparser
 import google.generativeai as genai
 import requests
+from dotenv import load_dotenv
+
+load_dotenv()
 
 logging.basicConfig(
     level=logging.INFO,
