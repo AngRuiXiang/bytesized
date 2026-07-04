@@ -129,7 +129,7 @@ def send_telegram(text: str) -> None:
 
 
 def main() -> None:
-    today = datetime.now(SGT).strftime("%A, %-d %B %Y")
+    today = datetime.now(SGT).strftime("%A, %d %B %Y").lstrip("0").replace(" 0", " ")
     header = f"🤖 <b>AI News Digest — {today}</b>\n\n"
 
     items = fetch_recent_items(hours=48)
